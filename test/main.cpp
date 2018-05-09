@@ -1,4 +1,4 @@
-#include "mtvec.h"
+#include "data/mtvec.h"
 //#include "pointy.h"
 #include<iostream>
 
