@@ -1,0 +1,2 @@
+# frgr-lib
+generic library
