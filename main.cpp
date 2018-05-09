@@ -1,14 +1,16 @@
 #include "mtvec.h"
-#include "pointy.h"
+//#include "pointy.h"
 #include<iostream>
 
 int main()
 {
+    /*
     pointy<int> p;
 
     int a;
 
     p.pt = &a;
+    */
 
     mtvec mv;
 
@@ -36,8 +38,4 @@ int main()
 
     mv.get<a3>(2).f();
     std::cout<<mv.get<a3>(2).a;
-
-    int ap = 5, *b = &ap;
-
-    delete [] b;
 }
