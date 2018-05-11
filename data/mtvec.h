@@ -7,7 +7,7 @@ class mtvec
 {
 public:
     template<typename type>
-    void add(type&& obj);
+    void add(type obj);
 
     template<typename type>
     type& get(int idx);
@@ -16,10 +16,10 @@ private:
 };
 
 template<typename type>
-void mtvec::add(type&& obj)
+void mtvec::add(type obj)
 {
     //push back the address of the 'type' object
-    mtvec::obj.push_back(&obj);
+    mtvec::obj.push_back( new type( std::move(obj) ) );
 }
 
 template<typename type>
