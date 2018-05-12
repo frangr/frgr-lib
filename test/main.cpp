@@ -1,21 +1,28 @@
-#include "data/mtvec.h"
-//#include "pointy.h"
+#include "mtvec.h"
+#include "pointy.h"
 #include<iostream>
 
 int main()
 {
-    /*
-    pointy<int> p;
+    pointy<int> p(false);
 
-    int a;
+    int a = 15;
 
-    p.pt = &a;
-    */
+    p.pointer = &a;
+
+    std::cout<<"p 0: "<<*p.pointer<<std::endl;
+
+    pointy<int> p2(true);
+
+    p2.pointer = new int[3]{1, 2, 3};
+
+    std::cout<<"p 0: "<<p2.pointer[0]<<std::endl;
 
     mtvec mv;
 
     int   a1 = 5;
     float a2 = 23.4;
+
     struct a3
     {
         public:
@@ -28,6 +35,7 @@ int main()
     };
 
     a3 s3;
+
 
     mv.add(a1);
     mv.add(a2);
