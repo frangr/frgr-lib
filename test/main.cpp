@@ -1,5 +1,5 @@
-#include "src/data/mtvec.h"
-#include "src/smp/pointy.h"
+#include "data/mtvec.h"
+#include "smp/pointy.h"
 #include<iostream>
 
 int main()
