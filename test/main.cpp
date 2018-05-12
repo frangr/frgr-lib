@@ -25,7 +25,6 @@ int main()
 
     struct a3
     {
-        public:
         int a;
         void f()
         {
