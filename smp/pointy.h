@@ -5,7 +5,7 @@ template<typename T>
 class pointy
 {
 public:
-    pointy(bool ap);
+    pointy(bool ap, T* pt = nullptr);
     ~pointy();
     T* pointer;
 private:
@@ -13,10 +13,7 @@ private:
 };
 
 template<typename T>
-pointy<T>::pointy(bool ap)
-{
-    ArrayPointer = ap;
-}
+pointy<T>::pointy(bool ap, T* pt):pointer(pt), ArrayPointer(ap){}
 
 template<typename T>
 pointy<T>::~pointy()
